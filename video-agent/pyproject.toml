@@ -9,7 +9,6 @@ python = "^3.11"
 torch = ">=2.0.0"
 diffusers = "^0.26.0"
 transformers = "^4.36.0"
-liveportrait = "^0.0.1"
 accelerate = "^0.26.0"
 opencv-python = "^4.9.0"
 langchain = "^0.1.0"
@@ -17,6 +16,8 @@ langgraph = "^0.0.1"
 litellm = "^1.25.0"
 typer = "^0.9.0"
 rich = "^13.7.0"
+gradio = "^4.0.0"
+numpy = "^1.26.0"
 
 [build-system]
 requires = ["poetry-core"]

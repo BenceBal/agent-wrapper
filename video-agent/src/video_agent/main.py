@@ -6,6 +6,15 @@ app = typer.Typer()
 console = Console()
 
 @app.command()
+def ui():
+    """
+    Launch the Gradio Web UI for Drag-and-Drop Video Generation.
+    """
+    console.print("[bold green]Launching Video Studio...[/bold green]")
+    from .ui import launch_ui
+    launch_ui()
+
+@app.command()
 def generate(prompt: str):
     """
     Generate a video from a prompt using local Flux/LivePortrait.
